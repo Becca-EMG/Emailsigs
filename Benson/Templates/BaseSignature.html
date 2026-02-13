@@ -24,16 +24,50 @@
         }
       </style>
     <![endif]-->
+    <style type="text/css">
+      body,
+      table,
+      td,
+      a {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+
+      img {
+        border: 0;
+        outline: none;
+        text-decoration: none;
+        -ms-interpolation-mode: bicubic;
+      }
+
+      table.main-table {
+        width: 100% !important;
+        max-width: 600px !important;
+      }
+    </style>
   </head>
-  <body style="margin: 0; padding: 0">
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    "
+  >
     <!--Main table Whole Sig-->
+    <!--[if mso]>
+      <table cellpadding="0" cellspacing="0" border="0" width="600" style="width: 600px; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
+        <tr>
+          <td>
+    <![endif]-->
     <table
+      class="main-table"
       cellpadding="0"
       cellspacing="0"
       border="0"
-      width="600"
+      width="100%"
       style="
-        width: 600px;
+        width: 100%;
         max-width: 600px;
         border-collapse: collapse;
         mso-table-lspace: 0pt;
@@ -434,6 +468,11 @@
         <!--right side table end-->
       </tr>
     </table>
+    <!--[if mso]>
+          </td>
+        </tr>
+      </table>
+    <![endif]-->
     <!--Main table Whole Sig end-->
   </body>
 </html>
