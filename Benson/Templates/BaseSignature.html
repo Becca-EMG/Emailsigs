@@ -44,6 +44,31 @@
         width: 100% !important;
         max-width: 600px !important;
       }
+
+      @media only screen and (max-width: 620px) {
+        td.sig-left,
+        td.sig-right {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        td.sig-left {
+          padding-right: 0 !important;
+          padding-bottom: 12px !important;
+        }
+
+        table.right-panel {
+          width: 100% !important;
+          border-left: 0 !important;
+          border-top: 8px solid #0e497b !important;
+        }
+
+        td.right-content {
+          padding-left: 0 !important;
+          padding-top: 10px !important;
+        }
+      }
     </style>
   </head>
   <body
@@ -75,9 +100,10 @@
       "
     >
       <!--Main Signature-->
-      <tr>
+      <tr class="sig-row">
         <!--Left side-->
         <td
+          class="sig-left"
           valign="middle"
           style="width: 170px; max-width: 170px; padding-right: 10px"
         >
@@ -215,8 +241,9 @@
         <!--End Left Side-->
 
         <!--Right Side-->
-        <td valign="middle" style="vertical-align: middle">
+        <td class="sig-right" valign="middle" style="vertical-align: middle">
           <table
+            class="right-panel"
             cellpadding="5"
             cellspacing="0"
             border="0"
@@ -228,7 +255,7 @@
             "
           >
             <tr>
-              <td style="padding-left: 10px">
+              <td class="right-content" style="padding-left: 10px">
                 <!--Name, designation, title-->
                 <table
                   cellpadding="0"
